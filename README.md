@@ -80,12 +80,14 @@ GROQ_API_KEY=your_groq_api_key_here
 ### Running the Chatbot
 
 ```bash
-python docflow.py
+python main.py #Corrected the file name from docflow.py to main.py
 ```
 
 ### Input Formats
 
 #### PDF Processing
+
+For Sample pdf and demo runs copy the path of pdf from Sample inputs folder.
 
 ```
 You: /path/to/document.pdf
@@ -93,11 +95,15 @@ You: /path/to/document.pdf
 
 #### JSON Processing
 
+For Sample JSON inputs go to Sample Inputs / Json.txt , while pasting in command line make sure you paste as one line.
+
 ```
 You: {"invoice_id": "INV-001", "amount": 1500, "sender": "company@example.com"}
 ```
 
 #### Email Processing
+
+For Sample Email inputs go to Sample Inputs / Email.txt , while pasting in command line make sure you paste as one line.
 
 ```
 You: Subject: Invoice Payment Due
