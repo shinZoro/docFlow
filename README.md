@@ -80,7 +80,7 @@ GROQ_API_KEY=your_groq_api_key_here
 ### Running the Chatbot
 
 ```bash
-python main.py #Corrected the file name from docflow.py to main.py
+python main.py
 ```
 
 ### Input Formats
