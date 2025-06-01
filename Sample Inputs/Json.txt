@@ -1,0 +1,23 @@
+# Invoice Samples
+{"vendor": "TechSupply Corp.", "client": "DataFlow Systems", "invoice_id": "TS-2025-0892", "amount": 15420, "issued_on": "2025-05-28", "due_by": "2025-06-15"}
+{"vendor": "Atlantic Manufacturing", "client": "BuildRight Construction", "invoice_id": "AM240567", "amount": 32800, "issued_on": "2025-05-20", "due_by": "2025-06-19"}
+
+# RFQ Samples
+{"requester": "MedDevice Inc.", "rfq_id": "RFQ-2025-334", "item_description": "Custom PCB assemblies for cardiac monitors", "quantity": 500, "deadline": "2025-06-20", "budget_range": "50000-75000"}
+{"requester": "Urban Transit Authority", "rfq_id": "UTA-RFQ-8821", "item_description": "LED lighting systems for bus stations", "quantity": 120, "deadline": "2025-07-10", "budget_range": "200000-300000"}
+
+# Complaint Samples
+{"complainant": "Sarah Mitchell", "company": "QuickDelivery Services", "complaint_id": "CMP-2025-1847", "issue_type": "Damaged Package", "description": "Package arrived with contents broken, inadequate packaging protection", "date_reported": "2025-05-30", "severity": "Medium"}
+{"complainant": "Riverside Restaurant Group", "company": "FreshProduce Suppliers", "complaint_id": "RRG-C-9923", "issue_type": "Quality Issue", "description": "Delivered vegetables were past expiration date, caused food safety concerns", "date_reported": "2025-05-29", "severity": "High"}
+
+# Regulation/Compliance Samples
+{"regulation_type": "Environmental Compliance", "regulation_id": "EPA-2025-WM-447", "subject_company": "ChemProcess Industries", "violation_description": "Exceeded permitted wastewater discharge limits", "reported_date": "2025-05-25", "compliance_deadline": "2025-08-01", "penalty_amount": 45000}
+{"regulation_type": "Safety Violation", "regulation_id": "OSHA-2025-SF-1203", "subject_company": "SteelWorks Manufacturing", "violation_description": "Inadequate fall protection equipment on elevated work platforms", "reported_date": "2025-05-22", "compliance_deadline": "2025-06-30", "penalty_amount": 12500}
+
+# Purchase Order Samples
+{"buyer": "Global Retail Chain", "supplier": "PackagingPro Solutions", "po_number": "PO-GRC-78234", "item_description": "Biodegradable shipping boxes", "quantity": 10000, "unit_price": 2.50, "total_amount": 25000, "delivery_date": "2025-06-25"}
+{"buyer": "TechStartup Labs", "supplier": "OfficeMax Business", "po_number": "TSL-PO-2025-12", "item_description": "Ergonomic office furniture set", "quantity": 25, "unit_price": 850, "total_amount": 21250, "delivery_date": "2025-06-18"}
+
+# Contract/Agreement Samples
+{"contract_type": "Service Agreement", "party_a": "CloudTech Solutions", "party_b": "Regional Bank Corp", "contract_id": "SA-2025-4471", "service_description": "24/7 IT infrastructure monitoring and support", "contract_value": 180000, "start_date": "2025-07-01", "end_date": "2026-06-30"}
+{"contract_type": "Lease Agreement", "party_a": "Downtown Properties LLC", "party_b": "Artisan Coffee Roasters", "contract_id": "LA-DP-2025-089", "service_description": "Commercial space lease - 2,400 sq ft retail", "monthly_amount": 8500, "start_date": "2025-08-01", "end_date": "2028-07-31"}
