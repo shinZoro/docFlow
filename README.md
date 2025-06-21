@@ -15,7 +15,6 @@ DocFlow is an AI-powered document processing system that automatically classifie
 
 ```
 DOCFLOW/
-├── .venv/                          # Virtual environment
 ├── Sample Inputs/                  # Sample files for testing
 │   ├── Email.txt                   # Sample email content
 │   ├── Json.txt                    # Sample JSON data
@@ -219,13 +218,17 @@ All processed documents are automatically saved to the SQLite database with:
 - Extracted structured data
 - Intent classification
 
-## Exit Commands
+## Gradio Web Interface (New!)
 
-To exit the chatbot:
+We have integrated a Gradio-powered frontend to provide an interactive web interface for DocFlow
 
+### How it works? 
+
+Just simply:
+```bash
+python main.py
 ```
-You: exit
-```
+and follow the link provided like (http://127.0.0.1:7860/)
 
 ## License
 

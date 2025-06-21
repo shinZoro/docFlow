@@ -10,6 +10,8 @@ from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_community.document_loaders import PyPDFLoader
 from datetime import datetime, timezone
+import gradio as gr
+
 
 load_dotenv()
 
@@ -264,23 +266,24 @@ graph_builder.add_edge("emailFlow", END)
 
 graph = graph_builder.compile()
 
-def chatbot():
+def chatbot(message, history):
     state = {"messages": [] , "raw_text": None , "extracted_data" : None}
+    user_input = message
+    if user_input == "exit":
+        return ("Thanks for today!!")
+    
+    state["messages"] = state.get("messages", []) + [{"role" : "user" , "content" : user_input}]
 
-    while True:
-        user_input = input("You: ")
-        if user_input == "exit":
-            print("Thanks for today")
-            break
+    state = graph.invoke(state)
 
-        state["messages"] = state.get("messages", []) + [{"role" : "user" , "content" : user_input}]
-
-        state = graph.invoke(state)
-
-        if state.get("messages") and len(state["messages"]) > 0:
+    if state.get("messages") and len(state["messages"]) > 0:
             last_msg = state["messages"][-1].content
+    
+    return last_msg
 
-            print(f"Assistant: {last_msg}")
 
 if __name__=="__main__":
-    chatbot()
+    gr.ChatInterface(
+        chatbot,
+        type="messages"
+    ).launch()
